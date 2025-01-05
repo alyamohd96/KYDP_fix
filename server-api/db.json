@@ -1,0 +1,30 @@
+{
+  "foodItems": [
+    {
+      "id": "1",
+      "name": "Burger",
+      "price": 5,
+      "image": "https://freeimage.host/i/burger.dQcu4ea"
+    },
+    {
+      "id": "2",
+      "name": "Pizza",
+      "price": 8,
+      "image": "https://freeimage.host/i/burger.dQcu4ea"
+    },
+    {
+      "id": "3",
+      "name": "Salad",
+      "price": 4,
+      "image": "https://freeimage.host/i/burger.dQcu4ea"
+    }
+  ],
+  "cartItems": [
+    {
+      "id": "3081",
+      "name": "Burger",
+      "amount": 1,
+      "price": 5
+    }
+  ]
+}

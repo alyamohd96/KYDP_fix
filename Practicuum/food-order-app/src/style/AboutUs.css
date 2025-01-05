@@ -1,0 +1,39 @@
+/* Ensures the image fits properly */
+.banner {
+    width: 100%; /* Make sure the container stretches across the full width */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .banner-image {
+    width: 100%; /* Make sure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image scales and fills the container without distortion */
+  }
+  
+  /* Center the banner text */
+  .center-banner {
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Ensure no scrolling occurs */
+    position: relative; /* Required for absolute positioning of marquee text */
+  }
+  
+  /* Marquee animation */
+  .marquee {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    position: absolute;
+    animation: marquee 10s linear infinite; /* Adjust the time for faster/slower scrolling */
+    left: 100%; /* Start off the right side of the container */
+  }
+  
+  /* Animation keyframes for sliding the text */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start just outside the right side of the container */
+    }
+    100% {
+      transform: translateX(-100vw); /* Move outside the left side of the viewport */
+    }
+  }
+  
